@@ -1,4 +1,11 @@
-import {test,expect,Browser,chromium,BrowserContext,Page,} from "@playwright/test";
+import {
+  test,
+  expect,
+  Browser,
+  chromium,
+  BrowserContext,
+  Page,
+} from "@playwright/test";
 
 test("browser-context-page-example", async () => {
   const browser: Browser = await chromium.launch({ headless: false });
@@ -14,9 +21,6 @@ test("browser-context-page-example", async () => {
   await page1.waitForTimeout(20000);
   // await browser.close();
 });
-
-
-
 
 // {headless:false} browser will open with a visible UI
 
